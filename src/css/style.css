@@ -45,12 +45,6 @@
             align-items: start;
         }
 
-        @media (max-width: 1200px) {
-            .main-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
         .create-section {
             background: linear-gradient(135deg, #1f1f3a 0%, #2d1b4e 100%);
             border-radius: 25px;
