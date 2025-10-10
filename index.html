@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas & Objetivos</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-trophy"></i> Metas & Objetivos</h1>
+            <p>Transforme seus sonhos em realidade 🚀</p>
+        </header>
+
+        <div class="main-grid">
+            <div class="create-section">
+                <h2><i class="fas fa-star"></i> Criar Nova Meta</h2>
+                <form id="goalForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-heading"></i> Título da Meta</label>
+                        <input type="text" id="goalTitle" required placeholder="Ex: Aprender um novo idioma">
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar"></i> Data de Conclusão</label>
+                        <input type="date" id="goalDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-image"></i> Imagem da Meta (opcional)</label>
+                        <div class="image-upload" onclick="document.getElementById('goalImage').click()">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p style="color: #9ca3af; margin-top: 10px;">Clique para adicionar uma imagem</p>
+                        </div>
+                        <input type="file" id="goalImage" accept="image/*" style="display: none;" onchange="previewImage(event)">
+                        <img id="imagePreview" class="image-preview">
+                    </div>
+
+                    <button type="button" class="submit-btn" onclick="createGoal()">
+                        <i class="fas fa-plus-circle"></i> Criar Meta
+                    </button>
+                </form>
+            </div>
+
+            <div class="goals-section">
+                <div id="goalsGrid" class="goals-grid"></div>
+                <div id="emptyState" class="empty-state">
+                    <i class="fas fa-bullseye"></i>
+                    <p>Nenhuma meta cadastrada ainda.<br>Comece criando sua primeira meta!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="celebration" class="celebration">
+        <div class="celebration-icon">🎉</div>
+        <h2>Parabéns!</h2>
+        <p>Você concluiu sua meta com sucesso!</p>
+    </div>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>
