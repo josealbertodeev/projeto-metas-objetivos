@@ -20,10 +20,17 @@ Uma aplicação moderna e intuitiva para **criar, visualizar e acompanhar metas 
 ## 📸 Demonstração
 
 ### Tela Principal
+
 <img width="773" height="583" alt="Tela principal mostrando grid de metas" src="https://github.com/user-attachments/assets/973287a8-d296-4f6a-8e45-1df8735ee491" />
 
+---
+
 ### Adicionando Nova Meta
-<img width="682" height="481" alt="Formulário de criação de meta" src="https://github.com/user-attachments/assets/64c5c30f-5a73-4d10-890c-2a79737d0a13" />
+
+![obj](https://github.com/user-attachments/assets/d1aab8d5-7051-4d41-ae88-9e9382e745ff)
+---
+
+<img width="1140" height="817" alt="Screenshot_1" src="https://github.com/user-attachments/assets/c04b83bf-3c0a-4bf0-8a1f-05c81a3b7f77" />
 
 ---
 
